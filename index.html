@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>plastron</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscription & Connexion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+<body>
+  <div class="container">
+    
+    <!-- Section Inscription -->
+    <section id="inscription-section">
+      <h2>Inscription</h2>
+      <form id="signup-form">
+        <input type="text" id="signup-name" placeholder="Nom complet" required>
+        <input type="email" id="signup-email" placeholder="Email" required>
+        <input type="password" id="signup-password" placeholder="Mot de passe" required>
+        <button type="submit">S'inscrire</button>
+      </form>
+    </section>
+
+    <!-- Section Connexion -->
+    <section id="connexion-section">
+      <h2>Connexion</h2>
+      <form id="login-form">
+        <input type="email" id="login-email" placeholder="Email" required>
+        <input type="password" id="login-password" placeholder="Mot de passe" required>
+        <button type="submit">Se connecter</button>
+      </form>
+    </section>
+
+    <!-- Section Profil utilisateur -->
+    <section id="user-info" class="hidden">
+      <h2><a href="https://sites.google.com/view/plastron" target="_blank">SITES.GOOGLE.COM/VIEW/PLASTRON</a></h2>
+      <p id="display-name"></p>
+      <p id="display-email"></p>
+      <button id="logout-btn">Se déconnecter</button><button id="mini-rallye-btn">Mini Rallye 🏎️</button>
+<div id="rallye-zone" class="hidden"
+ </div>
+
+      <!-- Connexion par nom -->
+      <div id="nom-utilisateur-section">
+        <input type="text" id="nomUtilisateur" placeholder="Entrez votre nom">
+        <button type="button" onclick="connecterUtilisateur(document.getElementById('nomUtilisateur').value)">Se connecter</button>
+        <div id="message"></div>
+      </div>
+    </section>
+
+    <!-- Accès Admin -->
+    <section id="admin-access">
+      <h2>Accès Admin</h2>
+      <input type="password" id="admin-code" placeholder="Code admin">
+      <button onclick="verifierCodeAdmin()">Accéder à l'admin panel</button>
+      <p id="admin-message"></p>
+    </section>
+
+    <!-- Section Admin Panel -->
+    <section id="admin-panel" class="hidden">
+      <h2>Panneau d'administration</h2>
+      <p>Bienvenue, administrateur !</p>
+
+      <!-- Liste des utilisateurs -->
+      <ul id="admin-users-list"></ul>
+
+      <!-- Admin Abuse -->
+      <div id="admin-abuse">
+        <h3>Admin Abuse</h3>
+        <textarea id="abuse-log" placeholder="Signaler un abus ici..."></textarea>
+        <button onclick="enregistrerAbus()">Enregistrer</button>
+      </div>
+
+      <!-- Savedir -->
+      <div id="admin-savedir">
+        <h3>Savedir</h3>
+        <input type="text" id="savedir-input" placeholder="Nom du fichier">
+        <button onclick="sauvegarderFichier()">Sauvegarder</button>
+      </div>
+
+      <!-- Questions / Réponses -->
+      <div id="admin-qa">
+        <h3>Questions / Réponses</h3>
+        <input type="text" id="question-input" placeholder="Question">
+        <input type="text" id="reponse-input" placeholder="Réponse">
+        <button onclick="ajouterQA()">Ajouter</button>
+        <ul id="qa-list"></ul>
+      </div>
+
+      <!-- Sethc (Ban) -->
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
